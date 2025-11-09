@@ -6,6 +6,8 @@ points sampled along a curve. The dataset (`xy_data.csv`) contains points
 generated from a parametric model where three variables were intentionally left
 unknown:
 
+<img width="1053" height="913" alt="image" src="https://github.com/user-attachments/assets/9dd54d2b-7628-4437-8b2f-8b7293ccc932" />
+
 - The rotation angle (theta)  
 - The exponential growth/decay factor (M)  
 - A horizontal shift value (X)
