@@ -5,9 +5,8 @@ This repository contains the solution to the assignment of identifying the
 unknown parameters \(\theta\), \(M\), and \(X\) in the following parametric
 curve:
 
-\[
-x(t)=t\cos(\theta)-e^{M|t|}\sin(0.3t)\sin(\theta)+X
-\]
+
+x=\left(t*\cos(\theta)-e^{M\left|t\right|}\cdot\sin(0.3t)\sin(\theta)\ +X \right )
 
 \[
 y(t)=42+t\sin(\theta)+e^{M|t|}\sin(0.3t)\cos(\theta)
