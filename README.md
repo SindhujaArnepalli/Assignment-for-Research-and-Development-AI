@@ -55,7 +55,6 @@ closely it matches the original point data.
 - `README.md` — This file  
 - `solve.md` — Explanation of how the parameters were estimated (plain English)  
 - `xy_data.csv` — The provided dataset  
-- (Optional) `fit.py` — Python script used for solving
 
 ---
 
