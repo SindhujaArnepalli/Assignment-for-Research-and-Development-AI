@@ -1,35 +1,64 @@
-# Assignment-for-Research-and-Development-AI
-# Parametric Curve Parameter Estimation
+# Assignment for Research and Development / AI  
+## Parametric Curve Parameter Estimation
 
-<img width="1053" height="913" alt="image" src="https://github.com/user-attachments/assets/9dd54d2b-7628-4437-8b2f-8b7293ccc932" />
+This project focuses on identifying three hidden parameters from a dataset of
+points sampled along a curve. The dataset (`xy_data.csv`) contains points
+generated from a parametric model where three variables were intentionally left
+unknown:
 
+- The rotation angle (theta)  
+- The exponential growth/decay factor (M)  
+- A horizontal shift value (X)
 
+The assignment requires estimating these three variables within specific ranges:
+
+- Theta is between 0° and 50°  
+- M is between -0.05 and 0.05  
+- X is between 0 and 100  
+- The parameter t runs from 6 to 60
+
+The goal is to find the values of theta, M, and X that best reproduce the
+original curve from the dataset.
+
+---
 
 ## ✅ Final Estimated Parameters
 
-After solving the system using numerical optimization:
+After analysis and curve fitting, the parameters that best match the provided
+data are:
 
-\[
-\boxed{\theta = 30^\circ,\quad M = 0.03,\quad X = 55}
-\]
+- **Theta = 30°**  
+- **M = 0.03**  
+- **X = 55**
 
-These values reproduce the dataset with extremely low error.
-
----
-
-## ✅ Final Parametric Curve (LaTeX)
-
-\[
-x(t)=t\cos(30^\circ)-e^{0.03|t|}\sin(0.3t)\sin(30^\circ)+55
-\]
-
-\[
-y(t)=42+t\sin(30^\circ)+e^{0.03|t|}\sin(0.3t)\cos(30^\circ)
-\]
+These values recreate the curve extremely accurately when applied back into the
+parametric model.
 
 ---
 
-## ✅ Viewing the Curve in Desmos
+## ✅ Desmos Visualization
 
-To visualize the curve, copy this **exact** Desmos-compatible expression:
+To help visualize the final curve, a Desmos graph is available here:
 
+**Desmos link:**  
+https://www.desmos.com/calculator/pwda0nktb1
+
+This link plots the final curve using the recovered parameters and shows how
+closely it matches the original point data.
+
+---
+
+## 📁 Repository Contents
+
+- `README.md` — This file  
+- `solve.md` — Explanation of how the parameters were estimated (plain English)  
+- `xy_data.csv` — The provided dataset  
+- (Optional) `fit.py` — Python script used for solving
+
+---
+
+## ✅ Summary
+
+This project demonstrates how hidden parameters in a parametric model can be
+recovered from real data using numerical methods and visualization tools.  
+The recovered values match the original curve with near-perfect accuracy.
