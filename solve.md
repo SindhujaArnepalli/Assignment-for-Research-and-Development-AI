@@ -71,6 +71,9 @@ A Desmos graph was created to verify this visually. The link is provided in the
 main README. When loaded, the curve for the recovered parameters traces almost
 exactly over the sampled data.
 
+<img width="1919" height="972" alt="image" src="https://github.com/user-attachments/assets/b9a7280f-0904-4d18-a526-2e9d94968250" />
+
+
 ---
 
 ## 6. Conclusion
