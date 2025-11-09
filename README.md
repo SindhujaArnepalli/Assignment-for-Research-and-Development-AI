@@ -1,47 +1,9 @@
 # Assignment-for-Research-and-Development-AI
 # Parametric Curve Parameter Estimation
 
-This repository contains the solution to the assignment of identifying the
-unknown parameters \(\theta\), \(M\), and \(X\) in the following parametric
-curve:
+<img width="1053" height="913" alt="image" src="https://github.com/user-attachments/assets/9dd54d2b-7628-4437-8b2f-8b7293ccc932" />
 
 
-x=\left(t*\cos(\theta)-e^{M\left|t\right|}\cdot\sin(0.3t)\sin(\theta)\ +X \right )
-
-\[
-y(t)=42+t\sin(\theta)+e^{M|t|}\sin(0.3t)\cos(\theta)
-\]
-
-The dataset `xy_data.csv` contains a list of points sampled from this curve
-for parameter values \(6 < t < 60\).
-
----
-
-## ✅ Problem Overview
-
-We're given:
-- **Three unknown variables**:  
-  - \(\theta\) (in degrees),  
-  - \(M\),  
-  - \(X\)
-
-- **Parameter ranges**:  
-  - \(0^\circ < \theta < 50^\circ\)  
-  - \(-0.05 < M < 0.05\)  
-  - \(0 < X < 100\)
-
-- **Goal**: Estimate these parameters so that the curve matches the dataset with
-minimum error.
-
-The oscillatory term  
-\[
-e^{M|t|}\sin(0.3t)
-\]  
-creates a rotated, growing (or decaying) sinusoidal ripple on top of a straight,
-tilted base line. Recovering the parameters requires aligning the dataset to
-this model.
-
----
 
 ## ✅ Final Estimated Parameters
 
